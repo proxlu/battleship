@@ -1,1 +1,1 @@
-# fleet-battle
+# battleship
