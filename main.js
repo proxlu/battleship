@@ -174,23 +174,24 @@ class Battleship {
   canPlaceShip(row, col, size) {
     const cells = this.getShipCells(row, col, size);
     if (!cells) return false;
-    
+  
     return cells.every(([r, c]) => {
-      if (r < 0 || r >= BOARD_SIZE || c < 0 || c >= BOARD_SIZE) return false;
-      return this.playerBoard[r][c] === null;
+      return r >= 0 && r < BOARD_SIZE && 
+             c >= 0 && c < BOARD_SIZE && 
+             this.playerBoard[r][c] === null;
     });
   }
 
   getShipCells(row, col, size) {
+    if (this.isHorizontal) {
+      if (col + size > BOARD_SIZE) return null;
+    } else {
+      if (row + size > BOARD_SIZE) return null;
+    }
+  
     const cells = [];
     for (let i = 0; i < size; i++) {
-      if (this.isHorizontal) {
-        if (col + i >= BOARD_SIZE) return null;
-        cells.push([row, col + i]);
-      } else {
-        if (row + i >= BOARD_SIZE) return null;
-        cells.push([row + i, col]);
-      }
+      cells.push(this.isHorizontal ? [row, col + i] : [row + i, col]);
     }
     return cells;
   }
