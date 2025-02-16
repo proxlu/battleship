@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship Game</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Battleship</h1>
+      <div class="game-container">
+        <div class="boards-container">
+          <div class="board-section">
+            <h2>Your Fleet</h2>
+            <div id="player-board" class="board"></div>
+          </div>
+          <div class="board-section">
+            <h2>Enemy Waters</h2>
+            <div id="ai-board" class="board"></div>
+          </div>
+        </div>
+        <div class="controls">
+          <button id="rotate-btn">Rotate Ship</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
