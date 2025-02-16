@@ -1,5 +1,3 @@
-import './style.css';
-
 const BOARD_SIZE = 10;
 const SHIPS = [
   { name: 'Carrier', size: 5 },
