@@ -49,7 +49,7 @@ h2 {
 }
 
 /* Desktop Layout */
-@media (min-width: 769px) {
+@media (min-width: 872px) {
   .boards-container {
     display: block;
     text-align: center;
@@ -68,7 +68,7 @@ h2 {
 }
 
 /* Mobile Layout */
-@media (max-width: 768px) {
+@media (max-width: 871px) {
   .boards-container {
     display: block;
   }
@@ -179,7 +179,7 @@ button:disabled {
   color: white;
 }
 
-@media (max-width: 871px) {
+@media (max-width: 768px) {
   .board {
     grid-template-columns: repeat(10, 30px);
     grid-template-rows: repeat(10, 30px);
