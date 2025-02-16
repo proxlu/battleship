@@ -1,4 +1,4 @@
-import './style.css';
+import 'https://github.com/proxlu/fleet-battle/blob/main/style.css';
 
 const BOARD_SIZE = 10;
 const SHIPS = [
