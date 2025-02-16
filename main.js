@@ -1,4 +1,4 @@
-import './style.css';
+import 'style.css';
 
 const BOARD_SIZE = 10;
 const SHIPS = [
